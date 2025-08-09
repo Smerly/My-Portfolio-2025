@@ -66,7 +66,7 @@ export default function Portfolio() {
                 </span>
               </h1>
               <div className="relative">
-                <p className="text-xl md:text-2xl text-slate-300 mb-4">Full-Stack MERN Developer</p>
+                <p className="text-xl md:text-2xl text-slate-300 mb-4">Full-Stack (Front-End Focused) Developer</p>
                 <div className="flex items-center justify-center space-x-4 text-slate-400">
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
@@ -75,7 +75,7 @@ export default function Portfolio() {
                   <div className="w-1 h-1 bg-slate-600 rounded-full"></div>
                   <div className="flex items-center space-x-2">
                     <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
-                    <span>Redux</span>
+                    <span>NextJS</span>
                   </div>
                   <div className="w-1 h-1 bg-slate-600 rounded-full"></div>
                   <div className="flex items-center space-x-2">
@@ -87,8 +87,8 @@ export default function Portfolio() {
             </div>
 
             <p className="text-lg text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Crafting exceptional digital experiences with modern web technologies. Specialized in complex state
-              management, performance optimization, and scalable architectures.
+              Fully immersed in React, Redux, Node in TypeScript. Engineered products from 0 to 1 with multiple
+              start-ups. Currently deep in LLM/GPT integration and application development.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
@@ -123,8 +123,9 @@ export default function Portfolio() {
                   <code>
                     {`const developer = {
   name: "Ernest Cheung",
-  skills: ["React", "TypeScript", "Node.js"],
-  passion: "Building amazing user experiences",
+  focus: "Full-Stack (Front-End Focused)",
+  specialties: ["React", "NextJS", "LLM/GPT"],
+  experience: "0 to 1 product development",
   status: "Available for opportunities"
 };`}
                   </code>
@@ -148,13 +149,13 @@ export default function Portfolio() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="space-y-6">
                 <p className="text-lg text-slate-300 leading-relaxed">
-                  I'm a passionate full-stack developer with a keen eye for detail and a love for creating seamless user
-                  experiences. My journey spans both startup environments and established companies, where I've honed my
-                  skills in modern web technologies.
+                  I'm a passionate full-stack developer with a front-end focus, specializing in building products from
+                  conception to launch. My experience spans multiple start-ups where I've engineered complete solutions
+                  using modern React ecosystems.
                 </p>
                 <p className="text-lg text-slate-300 leading-relaxed">
-                  Always eager to learn and adapt, I continuously explore new technologies and methodologies to deliver
-                  cutting-edge solutions that make a real impact.
+                  Currently diving deep into LLM/GPT integration and application development, I'm always excited to
+                  explore cutting-edge technologies that push the boundaries of what's possible in web development.
                 </p>
 
                 <div className="grid grid-cols-2 gap-6 mt-8">
@@ -415,13 +416,15 @@ export default function Portfolio() {
                     "SASS",
                     "HTML",
                     "CSS",
+                    "GPT-4/LLM",
+                    "Framer Motion",
                   ],
                 },
                 {
                   title: "Backend",
                   icon: <Database className="w-6 h-6" />,
                   gradient: "from-blue-500 to-cyan-500",
-                  skills: ["Node.js", "Python", "Flask", "SQLAlchemy", "APIs", "SQL"],
+                  skills: ["Node.js", "Python", "Flask", "SQLAlchemy", "APIs", "SQL", "Drizzle ORM"],
                 },
                 {
                   title: "Database",
@@ -433,7 +436,16 @@ export default function Portfolio() {
                   title: "Tools & More",
                   icon: <Code className="w-6 h-6" />,
                   gradient: "from-purple-500 to-indigo-500",
-                  skills: ["Git", "Figma", "ElectronJS", "D3.js", "React Native", "Zustand"],
+                  skills: [
+                    "Git",
+                    "Figma",
+                    "ElectronJS",
+                    "D3.js",
+                    "React Native",
+                    "Zustand",
+                    "OpenRouter",
+                    "LLM Streaming",
+                  ],
                 },
               ].map((category, index) => (
                 <Card
