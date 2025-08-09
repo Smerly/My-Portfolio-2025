@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { skillCategories } from "@/lib/data"
+import { Icon } from "@/components/ui/icon"
 
 export function SkillsSection() {
   return (
@@ -23,7 +24,7 @@ export function SkillsSection() {
                   <div
                     className={`w-12 h-12 bg-gradient-to-r ${category.gradient} rounded-xl flex items-center justify-center text-white mb-2`}
                   >
-                    {category.icon}
+                    <Icon name={category.icon} />
                   </div>
                   <CardTitle className="text-lg text-white group-hover:text-blue-400 transition-colors">
                     {category.title}

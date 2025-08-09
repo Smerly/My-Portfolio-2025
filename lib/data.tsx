@@ -1,4 +1,3 @@
-import { Code, Database, Palette, Zap } from "lucide-react"
 import type { Experience, Project, SkillCategory, ContactInfo } from "@/types/portfolio"
 
 export const contactInfo: ContactInfo = {
@@ -53,7 +52,7 @@ export const projects: Project[] = [
     tags: ["NextJS", "TypeScript", "OpenAI GPT-4", "Postgres", "Drizzle ORM"],
     status: "Current",
     gradient: "from-emerald-500 to-teal-500",
-    icon: <Zap className="w-6 h-6" />,
+    icon: "zap",
   },
   {
     title: "CryptoTrack",
@@ -62,7 +61,7 @@ export const projects: Project[] = [
       "Real-time cryptocurrency tracking application with advanced data visualization, trend analysis, and portfolio management features.",
     tags: ["D3.js", "TailwindCSS", "JavaScript", "APIs"],
     gradient: "from-blue-500 to-cyan-500",
-    icon: <Database className="w-6 h-6" />,
+    icon: "database",
   },
   {
     title: "Multitask",
@@ -71,14 +70,14 @@ export const projects: Project[] = [
       "Downloadable MacOS application enabling seamless Zoom meeting management from any application context.",
     tags: ["ElectronJS", "AppleScript", "JavaScript", "MacOS"],
     gradient: "from-purple-500 to-pink-500",
-    icon: <Code className="w-6 h-6" />,
+    icon: "code",
   },
 ]
 
 export const skillCategories: SkillCategory[] = [
   {
     title: "Frontend",
-    icon: <Palette className="w-6 h-6" />,
+    icon: "palette",
     gradient: "from-pink-500 to-rose-500",
     skills: [
       "React",
@@ -96,19 +95,19 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "Backend",
-    icon: <Database className="w-6 h-6" />,
+    icon: "database",
     gradient: "from-blue-500 to-cyan-500",
     skills: ["Node.js", "Python", "Flask", "SQLAlchemy", "APIs", "SQL", "Drizzle ORM"],
   },
   {
     title: "Database",
-    icon: <Database className="w-6 h-6" />,
+    icon: "database",
     gradient: "from-emerald-500 to-teal-500",
     skills: ["PostgreSQL", "MongoDB", "Firebase", "SQL"],
   },
   {
     title: "Tools & More",
-    icon: <Code className="w-6 h-6" />,
+    icon: "code",
     gradient: "from-purple-500 to-indigo-500",
     skills: ["Git", "Figma", "ElectronJS", "D3.js", "React Native", "Zustand", "OpenRouter", "LLM Streaming"],
   },

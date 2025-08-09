@@ -3,6 +3,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/lib/data"
+import { Icon } from "@/components/ui/icon"
 
 export function ProjectsSection() {
   return (
@@ -26,7 +27,7 @@ export function ProjectsSection() {
                     <div
                       className={`w-12 h-12 bg-gradient-to-r ${project.gradient} rounded-xl flex items-center justify-center text-white mb-4`}
                     >
-                      {project.icon}
+                      <Icon name={project.icon} />
                     </div>
                     {project.status && (
                       <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">

@@ -1,4 +1,3 @@
-import type React from "react"
 export interface Experience {
   title: string
   company: string
@@ -14,12 +13,12 @@ export interface Project {
   tags: string[]
   status?: string
   gradient: string
-  icon: React.ReactNode
+  icon: IconIdentifier
 }
 
 export interface SkillCategory {
   title: string
-  icon: React.ReactNode
+  icon: IconIdentifier
   gradient: string
   skills: string[]
 }
@@ -29,3 +28,5 @@ export interface ContactInfo {
   phone: string
   location: string
 }
+
+export type IconIdentifier = "code" | "database" | "palette" | "zap"
