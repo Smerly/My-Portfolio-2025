@@ -41,6 +41,17 @@ export const experiences: Experience[] = [
       "Restructured application to be responsive to mobile devices",
     ],
   },
+  {
+    title: "Front-End Developer",
+    company: "Meridian",
+    period: "Feb 2025 - March 2025",
+    color: "from-emerald-500 to-teal-500",
+    achievements: [
+      "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
+      "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
+      "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
+    ],
+  },
 ]
 
 export const projects: Project[] = [
