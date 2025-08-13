@@ -1,30 +1,118 @@
-# Portfolio website builder
+# Ernest Cheung - Portfolio Website
 
-*Automatically synced with your [v0.dev](https://v0.dev) deployments*
+A modern, responsive portfolio website built with Next.js 15, TypeScript, and Tailwind CSS.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/smerlys-projects/v0-portfolio-website-builder)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.dev-black?style=for-the-badge)](https://v0.dev/chat/projects/b5wiuu9Q7bP)
+## 🚀 Features
 
-## Overview
+- **Modern Design**: Sleek dark theme with gradient accents and glass morphism effects
+- **Responsive**: Fully responsive design that works on all devices
+- **Performance Optimized**: Built with Next.js 15 and optimized for speed
+- **SEO Ready**: Proper meta tags and structured data for search engines
+- **Type Safe**: Built with TypeScript for better development experience
+- **Accessible**: Follows accessibility best practices
 
-This repository will stay in sync with your deployed chats on [v0.dev](https://v0.dev).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.dev](https://v0.dev).
+## 🛠️ Tech Stack
 
-## Deployment
+- **Framework**: Next.js 15
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: Radix UI + shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Vercel
 
-Your project is live at:
+## 📦 Installation
 
-**[https://vercel.com/smerlys-projects/v0-portfolio-website-builder](https://vercel.com/smerlys-projects/v0-portfolio-website-builder)**
+1. Clone the repository:
+\`\`\`bash
+git clone https://github.com/yourusername/ernest-portfolio.git
+cd ernest-portfolio
+\`\`\`
 
-## Build your app
+2. Install dependencies:
+\`\`\`bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+\`\`\`
 
-Continue building your app on:
+3. Run the development server:
+\`\`\`bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+\`\`\`
 
-**[https://v0.dev/chat/projects/b5wiuu9Q7bP](https://v0.dev/chat/projects/b5wiuu9Q7bP)**
+4. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## How It Works
+## 🏗️ Project Structure
 
-1. Create and modify your project using [v0.dev](https://v0.dev)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+\`\`\`
+├── app/                    # Next.js app directory
+│   ├── globals.css        # Global styles
+│   ├── layout.tsx         # Root layout
+│   └── page.tsx           # Home page
+├── components/            # React components
+│   ├── layout/           # Layout components
+│   ├── sections/         # Page sections
+│   └── ui/               # UI components
+├── lib/                  # Utility functions and data
+├── types/                # TypeScript type definitions
+└── public/               # Static assets
+\`\`\`
+
+## 🎨 Customization
+
+### Updating Content
+
+1. **Personal Information**: Edit `lib/data.tsx` to update your personal details, experience, projects, and skills.
+
+2. **Styling**: Modify `app/globals.css` and component styles to match your preferences.
+
+3. **Components**: Customize individual components in the `components/` directory.
+
+### Adding New Sections
+
+1. Create a new component in `components/sections/`
+2. Add it to the main page in `app/page.tsx`
+3. Update navigation in `lib/data.tsx`
+
+## 📱 Responsive Design
+
+The portfolio is fully responsive and optimized for:
+- Desktop (1200px+)
+- Tablet (768px - 1199px)
+- Mobile (320px - 767px)
+
+## 🚀 Deployment
+
+### Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Connect your repository to Vercel
+3. Deploy automatically
+
+### Other Platforms
+
+The portfolio can be deployed to any platform that supports Next.js:
+- Netlify
+- AWS Amplify
+- Railway
+- DigitalOcean App Platform
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 🤝 Contributing
+
+Contributions, issues, and feature requests are welcome!
+
+## 📞 Contact
+
+Ernest Cheung - ernestcheung02@gmail.com
+
+Project Link: [https://github.com/yourusername/ernest-portfolio](https://github.com/yourusername/ernest-portfolio)
