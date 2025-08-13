@@ -1,3 +1,5 @@
+"use client"
+
 import { AnimatedBackground } from "@/components/layout/animated-background"
 import { Navigation } from "@/components/layout/navigation"
 import { Footer } from "@/components/layout/footer"

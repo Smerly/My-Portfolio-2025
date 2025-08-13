@@ -49,34 +49,17 @@ export function ContactSection() {
             </Card>
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg shadow-blue-500/25 group"
-            >
-              <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
-              Start a Conversation
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white bg-transparent"
-            >
-              <Download className="mr-2 h-4 w-4" />
-              Download Resume
-            </Button>
-          </div>
-
           <div className="flex justify-center space-x-6">
             <Link
-              href="#"
+              href="https://github.com/Smerly"
+              target="_blank"
               className="w-12 h-12 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300 hover:scale-110"
             >
               <Github className="h-6 w-6" />
             </Link>
             <Link
-              href="#"
+              href="https://www.linkedin.com/in/ernest-cheung-8254321b5/"
+              target="_blank"
               className="w-12 h-12 bg-slate-800 hover:bg-slate-700 rounded-xl flex items-center justify-center text-slate-400 hover:text-white transition-all duration-300 hover:scale-110"
             >
               <Linkedin className="h-6 w-6" />

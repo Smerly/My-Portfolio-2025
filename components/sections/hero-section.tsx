@@ -1,7 +1,18 @@
-import { Mail, Download, ArrowRight } from "lucide-react"
+import { Mail, Download, ArrowRight, Copy, CopyCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { useState } from "react"
 
 export function HeroSection() {
+  const [isCopied, setIsCopied] = useState(false)
+
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText("ernestcheung02@gmail.com")
+    setIsCopied(true)
+    setTimeout(() => {
+      setIsCopied(false)
+    }, 2000)
+  }
+
   return (
     <section className="relative pt-32 pb-20 px-6 min-h-screen flex items-center">
       <div className="container mx-auto">
@@ -38,19 +49,33 @@ export function HeroSection() {
             Currently deep in LLM/GPT integration and application development.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-6 justify-center mb-16">
-            <Button
-              size="lg"
-              className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg shadow-blue-500/25 group"
-            >
-              <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
-              Let's Connect
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+          <div className="flex flex-col sm:flex-row gap-16 justify-center mb-16">
+            <div>
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg shadow-blue-500/25 group"
+                onClick={() => window.open("mailto:ernestcheung02@gmail.com?subject=Hello&body=Hi%20there!", "_self")}
+              >
+                <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transf orm" />
+                Let's Connect
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+              <Button size='lg'
+                className="w-fit mx-2 px-4 bg-transparent rounded-xl text-slate-300"
+                onClick={() => {
+                  handleCopyEmail()
+                }}
+              >
+                {isCopied ? <CopyCheck className="w-4 h-4 text-emerald-500" /> : <Copy className="w-4 h-4" />}
+              </Button>
+            </div>
             <Button
               variant="outline"
               size="lg"
               className="border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white group bg-transparent"
+              onClick={() => {
+                window.open("/resume.pdf", "_blank")
+              }}
             >
               <Download className="mr-2 h-4 w-4 group-hover:animate-bounce" />
               Download Resume
@@ -80,7 +105,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </div >
+    </section >
   )
 }
