@@ -1,3 +1,5 @@
+"use client"
+
 import { Mail, Download, ArrowRight, Copy, CopyCheck } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
@@ -61,7 +63,7 @@ export function HeroSection() {
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
               <Button size='lg'
-                className="w-fit mx-2 px-4 bg-transparent rounded-xl text-slate-300"
+                className="w-fit mx-2 px-4 bg-transparent rounded-xl text-slate-300 shadow-lg shadow-blue-500/20"
                 onClick={() => {
                   handleCopyEmail()
                 }}

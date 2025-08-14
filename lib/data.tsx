@@ -8,10 +8,21 @@ export const contactInfo: ContactInfo = {
 
 export const experiences: Experience[] = [
   {
+    title: "Front-End Developer",
+    company: "Meridian",
+    period: "Feb 2025 - Mar 2025",
+    color: "from-emerald-500 to-teal-500",
+    achievements: [
+      "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
+      "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
+      "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
+    ],
+  },
+  {
     title: "Full-Stack Engineer",
     company: "Squared",
     period: "Jan 2023 - Jun 2025",
-    color: "from-blue-500 to-cyan-500",
+    color: "from-blue-500 to-navy-500",
     achievements: [
       "Engineered and optimized React UI Components: Rich Text Editor, Context Menu, 404 page",
       "Implemented end-to-end features: Github Commit Syncing with workspace via Github Webhooks",
@@ -23,7 +34,7 @@ export const experiences: Experience[] = [
     title: "Front-End Developer",
     company: "Co.Lab",
     period: "Jun 2022 - Aug 2022",
-    color: "from-emerald-500 to-teal-500",
+    color: "from-blue-500 to-yellow-500",
     achievements: [
       "Engineered Client-side functionality and design for MacOS application Multitask",
       "Optimized user experience: reliability and speed by 55% (~1250ms)",
@@ -34,22 +45,11 @@ export const experiences: Experience[] = [
     title: "Front-End React Developer",
     company: "Omnes Education",
     period: "Jan 2022 - May 2022",
-    color: "from-purple-500 to-pink-500",
+    color: "from-indigo-500 to-blue-500",
     achievements: [
       "Led front-end development for start-up OmniConnX as team lead",
       "Increased workflow efficiency by 25% under rigorous timeline constraints",
       "Restructured application to be responsive to mobile devices",
-    ],
-  },
-  {
-    title: "Front-End Developer",
-    company: "Meridian",
-    period: "Feb 2025 - March 2025",
-    color: "from-emerald-500 to-teal-500",
-    achievements: [
-      "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
-      "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
-      "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
     ],
   },
 ]
