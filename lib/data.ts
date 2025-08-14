@@ -1,127 +1,63 @@
-import type { Experience, Project, SkillCategory, ContactInfo } from "@/types/portfolio"
-
-export const contactInfo: ContactInfo = {
-    email: "ernestcheung02@gmail.com",
-    phone: "(510) 813-3250",
-    location: "Alameda, CA",
-}
-
-export const experiences: Experience[] = [
-    {
-        title: "Front-End Developer",
-        company: "Meridian",
-        period: "Feb 2025 - Mar 2025",
-        color: "from-emerald-500 to-teal-500",
-        achievements: [
-            "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
-            "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
-            "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
-        ],
-    },
-    {
-        title: "Full-Stack Engineer",
-        company: "Squared",
-        period: "Jan 2023 - Jun 2025",
-        color: "from-blue-500 to-navy-500",
-        achievements: [
-            "Engineered and optimized React UI Components: Rich Text Editor, Context Menu, 404 page",
-            "Implemented end-to-end features: Github Commit Syncing with workspace via Github Webhooks",
-            "Spearheaded database migrations and orchestrated versioning of MongoDB and Postgres",
-            "Modernized legacy codebase: JavaScript to TypeScript, refactoring Redux implementations",
-        ],
-    },
-    {
-        title: "Front-End Developer",
-        company: "Co.Lab",
-        period: "Jun 2022 - Aug 2022",
-        color: "from-blue-500 to-yellow-500",
-        achievements: [
-            "Engineered Client-side functionality and design for MacOS application Multitask",
-            "Optimized user experience: reliability and speed by 55% (~1250ms)",
-            "Collaborated with Product Managers and UX/UI designers in Agile/SCRUM environment",
-        ],
-    },
-    {
-        title: "Front-End React Developer",
-        company: "Omnes Education",
-        period: "Jan 2022 - May 2022",
-        color: "from-indigo-500 to-blue-500",
-        achievements: [
-            "Led front-end development for start-up OmniConnX as team lead",
-            "Increased workflow efficiency by 25% under rigorous timeline constraints",
-            "Restructured application to be responsive to mobile devices",
-        ],
-    },
+export const projects = [
+  {
+    title: "E-commerce Platform",
+    subtitle: "Full-stack shopping solution",
+    description:
+      "A comprehensive e-commerce platform with payment integration, inventory management, and admin dashboard.",
+    icon: "ShoppingCart",
+    gradient: "from-blue-500 to-purple-600",
+    tags: ["Next.js", "TypeScript", "Stripe", "PostgreSQL"],
+    status: "Live",
+    isPrivate: true,
+  },
+  {
+    title: "Task Management App",
+    subtitle: "Collaborative productivity tool",
+    description:
+      "A modern task management application with real-time collaboration, project tracking, and team analytics.",
+    icon: "CheckSquare",
+    gradient: "from-green-500 to-teal-600",
+    tags: ["React", "Node.js", "Socket.io", "MongoDB"],
+    status: "Live",
+    isPrivate: false,
+  },
+  {
+    title: "AI Chat Assistant",
+    subtitle: "Intelligent conversation bot",
+    description: "An advanced AI-powered chat assistant with natural language processing and context awareness.",
+    icon: "MessageCircle",
+    gradient: "from-purple-500 to-pink-600",
+    tags: ["Python", "FastAPI", "OpenAI", "React"],
+    status: "Beta",
+    isPrivate: true,
+  },
+  {
+    title: "Weather Dashboard",
+    subtitle: "Real-time weather insights",
+    description: "A beautiful weather dashboard with forecasts, interactive maps, and detailed meteorological data.",
+    icon: "Cloud",
+    gradient: "from-cyan-500 to-blue-600",
+    tags: ["Vue.js", "D3.js", "Weather API", "Tailwind CSS"],
+    status: "Live",
+    isPrivate: false,
+  },
+  {
+    title: "Portfolio Website",
+    subtitle: "Personal brand showcase",
+    description: "A responsive portfolio website showcasing projects, skills, and professional experience.",
+    icon: "User",
+    gradient: "from-orange-500 to-red-600",
+    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
+    isPrivate: true,
+  },
+  {
+    title: "Analytics Dashboard",
+    subtitle: "Data visualization platform",
+    description: "A comprehensive analytics dashboard with real-time data visualization and reporting capabilities.",
+    icon: "BarChart3",
+    gradient: "from-indigo-500 to-purple-600",
+    tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
+    status: "Development",
+    isPrivate: false,
+  },
 ]
-
-export const projects: Project[] = [
-    {
-        title: "MunchAI",
-        subtitle: "LLM Integrated Foodie App",
-        description:
-            "AI-powered food discovery app combining GPT-4 with custom LLM behavior, real-time user analysis, and image-based dish insights.",
-        tags: ["NextJS", "TypeScript", "OpenAI GPT-4", "Postgres", "Drizzle ORM"],
-        status: "Current",
-        gradient: "from-emerald-500 to-teal-500",
-        icon: "zap",
-    },
-    {
-        title: "CryptoTrack",
-        subtitle: "Crypto Currency Tracker",
-        description:
-            "Real-time cryptocurrency tracking application with advanced data visualization, trend analysis, and portfolio management features.",
-        tags: ["D3.js", "TailwindCSS", "JavaScript", "APIs"],
-        gradient: "from-blue-500 to-cyan-500",
-        icon: "database",
-    },
-    {
-        title: "Multitask",
-        subtitle: "MacOS Desktop Application",
-        description:
-            "Downloadable MacOS application enabling seamless Zoom meeting management from any application context.",
-        tags: ["ElectronJS", "AppleScript", "JavaScript", "MacOS"],
-        gradient: "from-purple-500 to-pink-500",
-        icon: "code",
-    },
-]
-
-export const skillCategories: SkillCategory[] = [
-    {
-        title: "Frontend",
-        icon: "palette",
-        gradient: "from-pink-500 to-rose-500",
-        skills: [
-            "React",
-            "Redux",
-            "Next.js",
-            "TypeScript",
-            "JavaScript",
-            "TailwindCSS",
-            "SASS",
-            "HTML",
-            "CSS",
-            "GPT-4/LLM",
-            "Framer Motion",
-        ],
-    },
-    {
-        title: "Backend",
-        icon: "database",
-        gradient: "from-blue-500 to-cyan-500",
-        skills: ["Node.js", "Python", "Flask", "SQLAlchemy", "APIs", "SQL", "Drizzle ORM"],
-    },
-    {
-        title: "Database",
-        icon: "database",
-        gradient: "from-emerald-500 to-teal-500",
-        skills: ["PostgreSQL", "MongoDB", "Firebase", "SQL"],
-    },
-    {
-        title: "Tools & More",
-        icon: "code",
-        gradient: "from-purple-500 to-indigo-500",
-        skills: ["Git", "Figma", "ElectronJS", "D3.js", "React Native", "Zustand", "OpenRouter", "LLM Streaming"],
-    },
-]
-
-export const navigationItems = ["About", "Experience", "Projects", "Skills", "Contact"]
