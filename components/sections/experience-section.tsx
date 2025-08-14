@@ -16,7 +16,25 @@ export function ExperienceSection() {
 
           <div className="space-y-8">
             {experiences.map((job, index) => {
-              console.log(`Experience ${index}: ${job.company} - Color: ${job.color}`)
+              // Direct company-based color mapping
+              const getGradientColors = (company: string) => {
+                switch (company) {
+                  case "Meridian":
+                    return "#10b981, #14b8a6" // emerald to teal
+                  case "Squared":
+                    return "#14b8a6, #a855f7" // teal to purple
+                  case "Co.Lab":
+                    return "#3b82f6, #eab308" // blue to yellow
+                  case "Omnes Education":
+                    return "#6366f1, #3b82f6" // indigo to blue
+                  default:
+                    return "#64748b, #94a3b8" // fallback gray
+                }
+              }
+
+              const gradientColors = getGradientColors(job.company)
+              console.log(`${job.company}: ${gradientColors}`) // Debug log
+
               return (
                 <Card
                   key={index}
@@ -25,20 +43,10 @@ export function ExperienceSection() {
                   <CardHeader>
                     <div className="flex justify-between items-start">
                       <div className="flex items-start space-x-4">
-                        {/* Force the gradient with !important and inline styles */}
                         <div
-                          className={`w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg`}
+                          className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0 shadow-lg"
                           style={{
-                            background: `linear-gradient(to right, ${job.color.includes("emerald")
-                                ? "#10b981, #14b8a6"
-                                : job.color.includes("blue")
-                                  ? "#3b82f6, #06b6d4"
-                                  : job.color.includes("violet")
-                                    ? "#8b5cf6, #a855f7"
-                                    : job.color.includes("rose")
-                                      ? "#f43f5e, #ec4899"
-                                      : "#64748b, #94a3b8"
-                              })`,
+                            background: `linear-gradient(to right, ${gradientColors})`,
                           }}
                         >
                           <Code className="w-6 h-6 text-white" />
@@ -47,20 +55,10 @@ export function ExperienceSection() {
                           <CardTitle className="text-xl text-white group-hover:text-blue-400 transition-colors">
                             {job.title}
                           </CardTitle>
-                          {/* Force the company name gradient */}
                           <CardDescription
                             className="text-lg font-medium"
                             style={{
-                              background: `linear-gradient(to right, ${job.color.includes("emerald")
-                                  ? "#10b981, #14b8a6"
-                                  : job.color.includes("blue")
-                                    ? "#3b82f6, #06b6d4"
-                                    : job.color.includes("violet")
-                                      ? "#8b5cf6, #a855f7"
-                                      : job.color.includes("rose")
-                                        ? "#f43f5e, #ec4899"
-                                        : "#64748b, #94a3b8"
-                                })`,
+                              background: `linear-gradient(to right, ${gradientColors})`,
                               WebkitBackgroundClip: "text",
                               backgroundClip: "text",
                               WebkitTextFillColor: "transparent",

@@ -22,7 +22,7 @@ export const experiences: Experience[] = [
         title: "Full-Stack Engineer",
         company: "Squared",
         period: "Jan 2023 - Jun 2025",
-        color: "from-blue-500 to-cyan-500",
+        color: "from-blue-500 to-navy-500",
         achievements: [
             "Engineered and optimized React UI Components: Rich Text Editor, Context Menu, 404 page",
             "Implemented end-to-end features: Github Commit Syncing with workspace via Github Webhooks",
@@ -34,7 +34,7 @@ export const experiences: Experience[] = [
         title: "Front-End Developer",
         company: "Co.Lab",
         period: "Jun 2022 - Aug 2022",
-        color: "from-blue-500 to-cyan-500",
+        color: "from-blue-500 to-yellow-500",
         achievements: [
             "Engineered Client-side functionality and design for MacOS application Multitask",
             "Optimized user experience: reliability and speed by 55% (~1250ms)",
@@ -45,7 +45,7 @@ export const experiences: Experience[] = [
         title: "Front-End React Developer",
         company: "Omnes Education",
         period: "Jan 2022 - May 2022",
-        color: "from-blue-500 to-cyan-500",
+        color: "from-indigo-500 to-blue-500",
         achievements: [
             "Led front-end development for start-up OmniConnX as team lead",
             "Increased workflow efficiency by 25% under rigorous timeline constraints",
