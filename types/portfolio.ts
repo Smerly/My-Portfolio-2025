@@ -14,6 +14,7 @@ export interface Project {
   status?: string
   gradient: string
   icon: IconIdentifier
+  link?: string;
 }
 
 export interface SkillCategory {

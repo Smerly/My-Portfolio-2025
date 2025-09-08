@@ -56,7 +56,7 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     {
-        title: "MunchAI",
+        title: "Yumble",
         subtitle: "LLM Integrated Foodie App",
         description:
             "AI-powered food discovery app combining GPT-4 with custom LLM behavior, real-time user analysis, and image-based dish insights.",
@@ -64,6 +64,7 @@ export const projects: Project[] = [
         status: "Current",
         gradient: "from-emerald-500 to-teal-500",
         icon: "zap",
+        link: "https://munch-ai-app-y5as.vercel.app/",
     },
     {
         title: "CryptoTrack",

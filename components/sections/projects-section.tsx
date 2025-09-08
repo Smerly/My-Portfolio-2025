@@ -7,6 +7,8 @@ import { Icon } from "@/components/ui/icon"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip"
 
 export function ProjectsSection() {
+
+  console.log(projects)
   return (
     <section id="projects" className="relative py-20 px-6">
       <div className="container mx-auto">
@@ -58,27 +60,30 @@ export function ProjectsSection() {
                     <Button
                       variant="outline"
                       className="w-full border-slate-600 text-slate-300 hover:bg-slate-800 hover:text-white group/btn bg-transparent"
+                      onClick={() => project.link && window.open(project.link, "_blank")}
                     >
                       <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:rotate-45 transition-transform" />
                       View Project
                     </Button>
-                    <TooltipProvider>
-                      <Tooltip>
-                        <TooltipTrigger asChild>
-                          <AlertCircle className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-amber-500" />
-                        </TooltipTrigger>
-                        <TooltipContent className="absolute z-[99999] w-fit min-w-56 bg-slate-800 border-slate-700 text-white shadow-2xl px-3 py-2 rounded-md"
-                          style={{
-                            position: "absolute",
-                            zIndex: 99999,
-                            top: "-40px",
-                            right: "0px",
-                          }}
-                          sideOffset={5}>
-                          <p className="text-center">This is a private repo</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
+                    {!project.link && (
+                      <TooltipProvider>
+                        <Tooltip>
+                          <TooltipTrigger asChild>
+                            <AlertCircle className="absolute right-3 top-1/2 transform -translate-y-1/2 h-4 w-4 text-amber-500" />
+                          </TooltipTrigger>
+                          <TooltipContent className="absolute z-[99999] w-fit min-w-56 bg-slate-800 border-slate-700 text-white shadow-2xl px-3 py-2 rounded-md"
+                            style={{
+                              position: "absolute",
+                              zIndex: 99999,
+                              top: "-40px",
+                              right: "0px",
+                            }}
+                            sideOffset={5}>
+                            <p className="text-center">This is a private repo</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      </TooltipProvider>
+                    )}
                   </div>
                 </CardContent>
               </Card>
