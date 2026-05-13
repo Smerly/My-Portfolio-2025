@@ -15,8 +15,9 @@ export function ContactSection() {
             </span>
           </h2>
           <p className="text-xl text-slate-300 mb-12 leading-relaxed">
-            Ready to turn your ideas into reality? I'm always excited to discuss new opportunities and collaborate on
-            innovative projects that make a difference.
+            Ready to turn your ideas into reality? I am open to product and front-end collaborations—and to
+            conversations about training data, task design, and evaluation when your models need the same rigor your UI
+            does.
           </p>
 
           <div className="grid md:grid-cols-2 gap-6 mb-12">

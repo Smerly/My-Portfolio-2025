@@ -30,4 +30,4 @@ export interface ContactInfo {
   location: string
 }
 
-export type IconIdentifier = "code" | "database" | "palette" | "zap"
+export type IconIdentifier = "code" | "database" | "palette" | "zap" | "munchkin"

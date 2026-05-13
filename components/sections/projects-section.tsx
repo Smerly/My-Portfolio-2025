@@ -3,12 +3,11 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { projects } from "@/lib/data"
+import { MunchLogo } from "@/components/icons/munch-logo"
 import { Icon } from "@/components/ui/icon"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/tooltip"
 
 export function ProjectsSection() {
-
-  console.log(projects)
   return (
     <section id="projects" className="relative py-20 px-6">
       <div className="container mx-auto">
@@ -30,10 +29,20 @@ export function ProjectsSection() {
                     <div
                       className={`w-12 h-12 bg-gradient-to-r ${project.gradient} rounded-xl flex items-center justify-center text-white mb-4`}
                     >
-                      <Icon name={project.icon} />
+                      {project.icon === "munchkin" ? (
+                        <MunchLogo className="h-7 w-7 shrink-0" fill="#ef817f" />
+                      ) : (
+                        <Icon name={project.icon} />
+                      )}
                     </div>
                     {project.status && (
-                      <Badge className="bg-emerald-500/20 text-emerald-400 border-emerald-500/30">
+                      <Badge
+                        className={
+                          project.icon === "munchkin"
+                            ? "border-[#ef817f]/40 bg-[#ef817f]/15 text-[#ef817f]"
+                            : "border-emerald-500/30 bg-emerald-500/20 text-emerald-400"
+                        }
+                      >
                         {project.status}
                       </Badge>
                     )}

@@ -26,29 +26,44 @@ export function HeroSection() {
               </span>
             </h1>
             <div className="relative">
-              <p className="text-xl md:text-2xl text-slate-300 mb-4">Full-Stack (Front-End Focused) Developer</p>
-              <div className="flex items-center justify-center space-x-4 text-slate-400">
+              <p className="text-xl md:text-2xl text-slate-300 mb-2">Full-Stack (Front-End Focused) Developer</p>
+              <p className="text-sm md:text-base text-slate-500 mb-4 max-w-2xl mx-auto leading-relaxed">
+                Next.js App Router, React, TypeScript, Node.js, REST and GraphQL APIs, PostgreSQL, Docker, AWS, and
+                GitHub Actions CI/CD. Tailwind CSS, shadcn, curated datasets, and eval rubrics keep coding agents aligned
+                with real repos and production CI.
+              </p>
+              <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-slate-400 text-sm md:text-base">
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-emerald-400 rounded-full animate-pulse"></div>
                   <span>React</span>
                 </div>
-                <div className="w-1 h-1 bg-slate-600 rounded-full"></div>
+                <span className="hidden sm:inline text-slate-600">·</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-sky-400 rounded-full animate-pulse delay-150"></div>
+                  <span>TypeScript</span>
+                </div>
+                <span className="hidden sm:inline text-slate-600">·</span>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-blue-400 rounded-full animate-pulse delay-300"></div>
-                  <span>NextJS</span>
+                  <span>Next.js</span>
                 </div>
-                <div className="w-1 h-1 bg-slate-600 rounded-full"></div>
+                <span className="hidden sm:inline text-slate-600">·</span>
+                <div className="flex items-center space-x-2">
+                  <div className="w-2 h-2 bg-cyan-400 rounded-full animate-pulse delay-500"></div>
+                  <span>Tailwind</span>
+                </div>
+                <span className="hidden sm:inline text-slate-600">·</span>
                 <div className="flex items-center space-x-2">
                   <div className="w-2 h-2 bg-purple-400 rounded-full animate-pulse delay-700"></div>
-                  <span>Node.js</span>
+                  <span>Agent data</span>
                 </div>
               </div>
             </div>
           </div>
 
           <p className="text-lg text-slate-300 mb-12 max-w-4xl mx-auto leading-relaxed">
-            Fully immersed in React, Redux, Node in TypeScript. Engineered products from 0 to 1 with multiple start-ups.
-            Currently deep in LLM/GPT integration and application development.
+            Next.js, TypeScript, Tailwind and shadcn, 0-to-1 with startups. LLM products and coding-agent data rooted in
+            real repos and CI.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-16 justify-center mb-16">
@@ -58,7 +73,7 @@ export function HeroSection() {
                 className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white border-0 shadow-lg shadow-blue-500/25 group"
                 onClick={() => window.open("mailto:ernestcheung02@gmail.com?subject=Hello&body=Hi%20there!", "_self")}
               >
-                <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transf orm" />
+                <Mail className="mr-2 h-4 w-4 group-hover:rotate-12 transition-transform" />
                 Let's Connect
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </Button>
@@ -98,7 +113,8 @@ export function HeroSection() {
                   {`const developer = {
   name: "Ernest Cheung",
   focus: "Full-Stack (Front-End Focused)",
-  specialties: ["React", "NextJS", "LLM/GPT"],
+  stack: ["Next.js", "TypeScript", "Tailwind", "shadcn/ui"],
+  also: ["LLM products", "coding-agent datasets", "eval rubrics"],
   experience: "0 to 1 product development",
   status: "Available for opportunities"
 };`}
@@ -107,7 +123,7 @@ export function HeroSection() {
             </div>
           </div>
         </div>
-      </div >
-    </section >
+      </div>
+    </section>
   )
 }

@@ -14,13 +14,14 @@ export function AboutSection() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-slate-300 leading-relaxed">
-                I'm a passionate full-stack developer with a front-end focus, specializing in building products from
-                conception to launch. My experience spans multiple start-ups where I've engineered complete solutions
-                using modern React ecosystems.
+                I'm a full-stack, front-end-leaning developer shipping products from conception to launch at multiple
+                start-ups. I run TypeScript end to end: Next.js server to App Router client, typed APIs and services,
+                Tailwind and shadcn, keeping types, UX, and deploys aligned.
               </p>
               <p className="text-lg text-slate-300 leading-relaxed">
-                Currently diving deep into LLM/GPT integration and application development, I'm always excited to
-                explore cutting-edge technologies that push the boundaries of what's possible in web development.
+                I build curated datasets and authoring flows for coding agents: repo-grounded tasks, engineering traces,
+                and eval rubrics across debugging, diffs, tests, and tools. With LLM and product work alongside, training
+                and evaluation stay tied to real IDEs and CI, not benchmark-only wins.
               </p>
 
               <div className="grid grid-cols-2 gap-6 mt-8">

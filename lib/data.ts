@@ -8,17 +8,6 @@ export const contactInfo: ContactInfo = {
 
 export const experiences: Experience[] = [
     {
-        title: "Front-End Developer",
-        company: "Meridian",
-        period: "Feb 2025 - Mar 2025",
-        color: "from-emerald-500 to-teal-500",
-        achievements: [
-            "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
-            "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
-            "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
-        ],
-    },
-    {
         title: "Full-Stack Engineer",
         company: "Squared",
         period: "Jan 2023 - Jun 2025",
@@ -28,6 +17,17 @@ export const experiences: Experience[] = [
             "Implemented end-to-end features: Github Commit Syncing with workspace via Github Webhooks",
             "Spearheaded database migrations and orchestrated versioning of MongoDB and Postgres",
             "Modernized legacy codebase: JavaScript to TypeScript, refactoring Redux implementations",
+        ],
+    },
+    {
+        title: "Front-End Developer",
+        company: "Meridian",
+        period: "Feb 2025 - Mar 2025",
+        color: "from-emerald-500 to-teal-500",
+        achievements: [
+            "Crafted beautiful, interactive data visualizations that turned complex metrics into clear, actionable insights for end users.",
+            "Designed a LLM-powered interface with tool invocation support, enabling users to interact with internal systems through natural language and execute automated workflows.",
+            "Shipped production features rapidly while keeping performance, accessibility, and maintainability at the forefront.",
         ],
     },
     {
@@ -56,14 +56,14 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     {
-        title: "Yumble",
+        title: "Munchkin",
         subtitle: "LLM Integrated Foodie App",
         description:
             "AI-powered food discovery app combining GPT-4 with custom LLM behavior, real-time user analysis, and image-based dish insights.",
         tags: ["NextJS", "TypeScript", "OpenAI GPT-4", "Postgres", "Drizzle ORM"],
         status: "Current",
-        gradient: "from-emerald-500 to-teal-500",
-        icon: "zap",
+        gradient: "from-[#ef817f] via-[#e2ccf3] to-[#9ee6bb]",
+        icon: "munchkin",
         link: "https://munch-ai-app-y5as.vercel.app/",
     },
     {
@@ -121,7 +121,17 @@ export const skillCategories: SkillCategory[] = [
         title: "Tools & More",
         icon: "code",
         gradient: "from-purple-500 to-indigo-500",
-        skills: ["Git", "Figma", "ElectronJS", "D3.js", "React Native", "Zustand", "OpenRouter", "LLM Streaming"],
+        skills: [
+            "Git",
+            "Figma",
+            "ElectronJS",
+            "D3.js",
+            "React Native",
+            "Zustand",
+            "OpenRouter",
+            "LLM Streaming",
+            "Training tasks & rubrics",
+        ],
     },
 ]
 

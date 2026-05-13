@@ -33,7 +33,6 @@ export function ExperienceSection() {
               }
 
               const gradientColors = getGradientColors(job.company)
-              console.log(`${job.company}: ${gradientColors}`) // Debug log
 
               return (
                 <Card
