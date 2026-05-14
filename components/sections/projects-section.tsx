@@ -9,7 +9,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../ui/
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="relative py-20 px-6">
+    <section id="projects" className="relative overflow-x-hidden py-20 px-6">
       <div className="container mx-auto">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16">
@@ -18,13 +18,13 @@ export function ProjectsSection() {
             </span>
           </h2>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {projects.map((project, index) => (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 auto-rows-fr">
+            {projects.map((project) => (
               <Card
-                key={index}
-                className="bg-slate-900/50 backdrop-blur-sm border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 group hover:scale-105"
+                key={project.title}
+                className="flex h-full min-w-0 flex-col bg-slate-900/50 backdrop-blur-sm border-slate-700/50 hover:border-slate-600/50 transition-all duration-300 group hover:scale-[1.02] sm:hover:scale-105"
               >
-                <CardHeader>
+                <CardHeader className="shrink-0">
                   <div className="flex items-start justify-between">
                     <div
                       className={`w-12 h-12 bg-gradient-to-r ${project.gradient} rounded-xl flex items-center justify-center text-white mb-4`}
@@ -56,8 +56,8 @@ export function ProjectsSection() {
                     {project.subtitle}
                   </CardDescription>
                 </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-slate-300 leading-relaxed">{project.description}</p>
+                <CardContent className="flex min-h-0 flex-1 flex-col gap-4 pt-0">
+                  <p className="min-h-0 flex-1 text-slate-300 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2">
                     {project.tags.map((tag, i) => (
                       <Badge key={i} variant="secondary" className="bg-slate-800 text-slate-300 hover:bg-slate-700">

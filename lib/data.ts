@@ -56,6 +56,16 @@ export const experiences: Experience[] = [
 
 export const projects: Project[] = [
     {
+        title: "ScopeSight",
+        subtitle: "Contract Risk Scanner for Freelancers",
+        description:
+            "Scan agreements before you sign: a contract risk scanner built for freelancers, highlighting risky clauses and ambiguities so you can negotiate or pass with confidence.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "UX", "APIs"],
+        gradient: "from-slate-600 to-blue-600",
+        icon: "zap",
+        link: "https://www.scope-sight.app/",
+    },
+    {
         title: "Munchkin",
         subtitle: "LLM Integrated Foodie App",
         description:
@@ -65,16 +75,6 @@ export const projects: Project[] = [
         gradient: "from-[#ef817f] via-[#e2ccf3] to-[#9ee6bb]",
         icon: "munchkin",
         link: "https://munch-ai-app-y5as.vercel.app/",
-    },
-    {
-        title: "ScopeSight",
-        subtitle: "Contract Risk Scanner for Freelancers",
-        description:
-            "Scan agreements before you sign: a contract risk scanner built for freelancers, highlighting risky clauses and ambiguities so you can negotiate or pass with confidence.",
-        tags: ["Next.js", "TypeScript", "Tailwind CSS", "UX", "APIs"],
-        gradient: "from-slate-600 to-blue-600",
-        icon: "zap",
-        link: "https://www.scope-sight.app/",
     },
     {
         title: "Multitask",
