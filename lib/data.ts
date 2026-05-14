@@ -67,13 +67,14 @@ export const projects: Project[] = [
         link: "https://munch-ai-app-y5as.vercel.app/",
     },
     {
-        title: "CryptoTrack",
-        subtitle: "Crypto Currency Tracker",
+        title: "ScopeSight",
+        subtitle: "Contract Risk Scanner for Freelancers",
         description:
-            "Real-time cryptocurrency tracking application with advanced data visualization, trend analysis, and portfolio management features.",
-        tags: ["D3.js", "TailwindCSS", "JavaScript", "APIs"],
-        gradient: "from-blue-500 to-cyan-500",
-        icon: "database",
+            "Scan agreements before you sign: a contract risk scanner built for freelancers, highlighting risky clauses and ambiguities so you can negotiate or pass with confidence.",
+        tags: ["Next.js", "TypeScript", "Tailwind CSS", "UX", "APIs"],
+        gradient: "from-slate-600 to-blue-600",
+        icon: "zap",
+        link: "https://www.scope-sight.app/",
     },
     {
         title: "Multitask",
